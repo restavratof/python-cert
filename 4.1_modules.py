@@ -43,5 +43,38 @@ print(factorial(2), factorial(3))
 # with the leg lengths equal to x and y (the same as sqrt(pow(x,2)+pow(y,2)) but more precise)
 print(hypot(x, y))
 print(hypot(-x, -y))
-
+print('-'*50)
 print('-'*10, 'random:')
+from random import random, seed, randrange, randint, choice, sample
+for i in range(5):
+    print(random())
+print('-'*10, 'random with custom seed:')
+seed(0)
+for i in range(5):
+    print(random())
+
+print('-'*10, 'randrange:')
+# randrange(end)
+print(randrange(1), end=' ')
+# randrange(beg, end)
+print(randrange(0, 1), end=' ')
+# randrange(beg, end, step)
+print(randrange(0,1,1), end=' ')
+# randint(left, right)
+print(randint(0,0))
+
+print('-'*10, 'choise and sample:')
+# choise -  choose a random element from an input sequence and returns it.
+#           choice(sequence)
+# sample -  builds a list consisting of the elements_to_chose element "drawn" from the input sequesnce
+#           sample(sequence, elements_to_chose=1)
+lst = [1,2,3,4,5,6,7,8,9,10]
+print(choice(lst))
+print(sample(lst, 5))
+print(sample(lst, 10))
+
+
+
+
+
+
