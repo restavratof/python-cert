@@ -19,4 +19,10 @@ print(tuple3 * 3)
 print(1 in tuple3)
 print(5 not in tuple3)
 
+print('-'*9, ' DICTIONARIES')
+
+
+
+
+
 
