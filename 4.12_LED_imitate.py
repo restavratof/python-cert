@@ -10,13 +10,13 @@ numbers = [
 ]
 separator = ' '
 result = [];
-str1 = '1234567890123456789012345678901234567890'
+str1 = '123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890'
 # str1 = input()
 
 for i in range(5):
-    result_line = separator
+    result_line = ' '
     for ch in (str1):
-        result_line += numbers[i][int(ch)] + separator
+        result_line = f"{result_line}{numbers[i][int(ch)]} "
     result.append(result_line)
 # print result
 for i in range(5):
@@ -37,13 +37,14 @@ numbers = {
 }
 separator = ' '
 result = [];
-str1 = '1234567890123456789012345678901234567890'
+str1 = '123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890'
 # str1 = input()
 
 for i in range(5):
-    result_line = separator
+    result_line = ' '
     for ch in (str1):
-        result_line += numbers[i][ch] + separator
+        # result_line += numbers[i][ch] + separator
+        result_line = f"{result_line}{numbers[i][ch]} "
     result.append(result_line)
 # print result
 for i in range(5):
