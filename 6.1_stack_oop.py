@@ -15,6 +15,9 @@ class AddingStack(Stack):
         Stack.__init__(self)
         self.__sum = 0
 
+    def getSum(self):
+        return self.__sum
+
     def push(self, val):
         self.__sum += val
         Stack.push(self, val)
@@ -38,3 +41,14 @@ print(so1.pop())
 print(so1.pop())
 print(so1.pop())
 print(so2.pop())
+
+print('--------------')
+
+so3 = AddingStack()
+for i in range(5):
+    so3.push(i)
+print(so3.getSum())
+
+for i in range(5):
+    print(so3.pop())
+
