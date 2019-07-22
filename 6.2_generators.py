@@ -1,0 +1,1 @@
+# range() - function is, in fact, a generator, which is (in fact, again) an iterator
