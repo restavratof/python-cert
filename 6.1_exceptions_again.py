@@ -1,19 +1,3 @@
-def reciprocal(n):
-    try:
-        n = 1 / n
-    except ZeroDivisionError:
-        print("Division failed")
-        n = None
-    else:
-        print("Everything went fine")
-    finally:
-        print("It's time to say goodbye")
-        return n
-
-print(reciprocal(2))
-print(reciprocal(0))
-
-
 # BaseException
 #    +---Exception
 #    |   +---TypeError
@@ -133,6 +117,7 @@ print(reciprocal(0))
 #    +---SystemExit
 #    +---KeyboardInterrupt
 
+
 def printExcTree(thisclass, nest = 0):
     if nest > 1:
         print("   |" * (nest - 1), end="")
@@ -145,6 +130,3 @@ def printExcTree(thisclass, nest = 0):
         printExcTree(subclass, nest + 1)
 
 printExcTree(BaseException)
-
-
-
