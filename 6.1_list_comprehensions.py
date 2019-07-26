@@ -28,8 +28,24 @@ print(lst2)
 print('-'*20)
 #--------------------------------------
 
+print('List Comprehensions:')
+lst3 = [1 if x % 2 == 0 else 0 for x in range(10)]
+for v in lst3:
+    print(v, end=" ")
+print()
+
+print('Generator:')
+genr = (1 if x % 2 == 0 else 0 for x in range(10))
+for v in genr:
+    print(v, end=" ")
+print()
+
+print('1:',len(lst3))
+print('2:',len(genr))
+
 
 print('-'*20)
 #--------------------------------------
+
 
 
