@@ -27,19 +27,43 @@
 #           the previous content of the file remains untouched;
 #     both read and write operations are allowed for the stream.
 
-#####################################################
+##################################################################
 # Text mode 	Binary mode 	Description
 # rt 	        rb 	            read
 # wt 	        wb 	            write
 # at 	        ab 	            append
 # r+t 	        r+b 	        read and update
 # w+t 	        w+b 	        write and update
-#####################################################
+##################################################################
 
 # Finally,
 # the successful opening of the file will set the current file position (the virtual reading/writing head)
 #   before the first byte of the file if the mode is not a
 #   and after the last byte of file if the mode is set to a
 
-
-
+##################################################################
+# sys.stdin
+#   - stdin(as standard input)
+#   - the stdin stream is normally associated with the keyboard, pre-open for reading and regarded as the primary data source for the running programs;
+#   - the well - known input() function reads data from stdin by default.
+# sys.stdout
+#   - stdout(as standard output)
+#   - the stdout stream is normally associated with the screen, pre-open for writing, regarded as the primary target for outputting data by the running program;
+#   - the well - known print() function outputs the data to the stdout stream.
+# sys.stderr
+#   - stderr(as standard error output)
+#   - the stderr stream is normally associated with the screen, pre-open for writing,
+#       regarded as the primary place where the running program should send information on the errors encountered during its work;
+#   - we haven't presented any method to send the data to this stream (we will do it soon, we promise)
+#   - the separation of stdout(useful results produced by the program) from the stderr  (error messages,
+#       undeniably useful but does not provide results) gives the possibility of redirecting these two types of
+#       information to the different targets.More extensive discussion of this issue is beyond the scope of our course.
+#       The operation system handbook will provide more information on these issues.
+##################################################################
+import sys
+try:
+    stream = open("C:\Users\User\Desktop\file.txt", "rt")
+    # processing goes here
+    stream.close()
+except Exception as exc:
+    print("Cannot open the file:", exc)
