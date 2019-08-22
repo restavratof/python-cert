@@ -60,10 +60,3 @@
 #       information to the different targets.More extensive discussion of this issue is beyond the scope of our course.
 #       The operation system handbook will provide more information on these issues.
 ##################################################################
-import sys
-try:
-    stream = open("C:\Users\User\Desktop\file.txt", "rt")
-    # processing goes here
-    stream.close()
-except Exception as exc:
-    print("Cannot open the file:", exc)
