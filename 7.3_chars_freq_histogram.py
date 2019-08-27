@@ -21,5 +21,5 @@ except IOError as e:
     exit(e.errno)
 
 for key, val in chars_freq.items():
-    print('"',key,'" -> ', val)
+    print('"',key,'" -> ', val, sep='')
 
