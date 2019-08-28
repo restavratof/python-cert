@@ -59,3 +59,10 @@ print(data)
 print(filtered)
 
 
+
+#--------------------------------------
+print('-'*20,'\n','SANDBOX:', sep='')
+
+x = lambda a, b : a * b
+print(x(5, 6))
+
