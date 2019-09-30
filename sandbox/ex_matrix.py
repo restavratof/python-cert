@@ -1,4 +1,4 @@
-from pprint import pprint  # модуль pprint используется для удобного вывода на экран
+from pprint import pprint
 
 matrix = [[0.5, 0, 0, 0, 0],
           [1, 0.5, 0, 0, 0],
@@ -24,3 +24,5 @@ pprint(matrix_t)
 #  [0, 0, 0.5, 1, 1],
 #  [0, 0, 0, 0.5, 1],
 #  [0, 0, 0, 0, 0.5]]
+
+

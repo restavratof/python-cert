@@ -1,3 +1,7 @@
+
+def test():
+	print(__name__)
+
 print('EXAMPLE:')
 class I:
     def __init__(self, var='samle'):
