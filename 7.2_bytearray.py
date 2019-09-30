@@ -14,7 +14,8 @@ data = bytearray(10)
 
 print('1','-'*20)
 for i in range(len(data)):
-    data[i] = 10 - i
+    # data[i] = 10 - i
+    data[i] = ord('a') - i
 
 for b in data:
     print(hex(b))
