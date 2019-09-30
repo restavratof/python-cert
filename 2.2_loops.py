@@ -1,14 +1,25 @@
 # While
-print("-"*6," While:")
+print("WHILE LOOP:")
 i = 0
 while i < 5:
     i += 1
-
 print("i:{}".format(i))
 
+print('* With else:')
+##########################################
+# else - always executed once, regardles of wheter the loop has entered it's body or not
+i = 1
+while i < 3:
+    print(i)
+    i += 1
+else:
+    print('else:',i)
+# 1 2 3 4 else:5
 
-# FOR
-print("-"*6," For:")
+
+
+print('-'*40)
+print("FOR LOOP:")
 for i in range(5):
     print(i)
 
@@ -39,13 +50,5 @@ for i in range(5):
 # continue  - go to next turn immediately
 
 
-##########################################
-# else - always executed once, regardles of wheter the loop has entered it's body or not
-i = 1
-while i < 3:
-    print(i)
-    i += 1
-else:
-    print('else:',i)
-# 1 2 3 4 else:5
+
 
