@@ -1,32 +1,43 @@
 numbers = [ 10, 5, 7, 2, 1 ]
-print('a: ', numbers)
+print('-'*3)
+print(numbers)
+
+print('-'*3)
 numbers[0] = 111
-print('b: ', numbers)
+print(numbers)
+
+print('-'*3)
 numbers[1] = numbers[4]
-print('c: ', numbers)
-print('d: ', len(numbers))
-# Remove element
+print(numbers)
+print(len(numbers))
+
+print('-'*40)
+print('Remove element on position "1":')
 del numbers[1]
-print('e: ', numbers)
-# The last one
-print('f: ', numbers[-1])
-# Append element to the end of list
+print(numbers)
+
+print('Return the Last element:')
+print(numbers[-1])
+
+print("Append element to the end of list (35):")
 numbers.append(35)
-print('g: ', numbers)
+print(numbers)
+
 # Add new element at certain position   Format: list.insert(where, what)
+print('Add "222" on position "0":')
 numbers.insert(0, 222)
-print('h: ', numbers)
+print(numbers)
 
-
-# Variables swap
-print('-'*6,' Variables swap:')
+print('-'*40)
+print('VARIABLES SWAP:')
 var1 = 11
 var2 = 22
 print('var1:',var1,', var2:',var2)
 var1, var2 = var2, var1
 print('var1:',var1,', var2:',var2)
 
-print('-'*6,' Variables swap List:')
+print('-'*6)
+print('Variables swap List:')
 list = [ 1, 2, 3, 4, 5 ]
 print('before:', list)
 list[0], list[4] = list[4], list[0]
