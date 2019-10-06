@@ -1,17 +1,7 @@
+a = u'Hello'
+b = r'Hello \n my friend'
+с = 'Hello \n my friend'
 
-
-class A:
-    def a(self):
-        print('a')
-
-class B:
-    def a(self):
-        print('b')
-
-class C (B,A):
-    def c(self):
-        self.a()
-
-o = C()
-o.c()
-
+print(a)
+print(b)
+print(с)
